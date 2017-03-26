@@ -1,0 +1,26 @@
+{
+  "name": "my-page",
+  "version": "1.0.0",
+  "description": "my home page server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon ./index.js",
+    "server": "cross-env NODE_ENV=production node ./index.js",
+    "start": "npm run server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homepage",
+    "server"
+  ],
+  "author": "xiefei89",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-static": "^3.0.0",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "cross-env": "^3.2.4"
+  }
+}
