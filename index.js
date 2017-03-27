@@ -3,8 +3,8 @@ const Koa = require('koa');
 const app = new Koa();
 const port = process.env.NODE_ENV === 'development' ? 3000 : 80
 
-app.use(serve('regexper'));
-app.use(serve('uidocs'));
+app.use(serve('.'));
+app.use(serve('pages'));
 app.listen(port);
 
 console.log(`listening on port ${port}`);
